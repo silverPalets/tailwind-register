@@ -5,7 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/styles.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="bg-gray-300 dark:bg-gray-900">
+    <main class="">
+      <section
+        class="flex flex-col items-center justify-center px-6 py-8 text-"
+      >
+        <a
+          href="#"
+          class="flex justify-center items-center text-3xl font-semibold"
+        >
+          <img src="src/img/random-logo.svg" alt="" class="w-12 mr-2" />
+          Company
+        </a>
+        <div class="bg-gray-100 w-full">
+          <div class="">
+            <h1>create an account</h1>
+            <form action="">
+              <div>
+                <label for="email">Your email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="username@company.com"
+                />
+              </div>
+
+              <div>
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="••••••••"
+                />
+              </div>
+
+              <div>
+                <label for="confirm-password">Confirm password</label>
+                <input
+                  type="confirm-password"
+                  name="confirm-password"
+                  id="confirm-password"
+                />
+              </div>
+
+              <div>
+                <div>
+                  <input type="checkbox" id="terms" />
+                </div>
+                <div>
+                  <label for="terms"
+                    >accept the <a href="#">Terms and Conditions</a></label
+                  >
+                </div>
+              </div>
+              <button type="submit">Create an account</button>
+            </form>
+            <p>Already have an account? <a href="#">Login here</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
