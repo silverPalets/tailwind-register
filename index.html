@@ -5,64 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/styles.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-300 dark:bg-gray-900">
+  <body class="bg-gray-100">
     <main class="">
-      <section
-        class="flex flex-col items-center justify-center px-6 py-8 text-"
-      >
+      <section class="flex flex-col items-center justify-center md:h-screen">
         <a
           href="#"
-          class="flex justify-center items-center text-3xl font-semibold"
+          class="flex justify-center items-center text-3xl font-semibold mb-6"
         >
           <img src="src/img/random-logo.svg" alt="" class="w-12 mr-2" />
           Company
         </a>
-        <div class="bg-gray-100 w-full">
-          <div class="">
-            <h1>create an account</h1>
-            <form action="">
+        <div
+          class="bg-white w-full rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0"
+        >
+          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <h1
+              class="text-2xl font-bold leading-tight tracking-tight text-gray-900"
+            >
+              create an account
+            </h1>
+            <form class="space-y-4 md:space-y-6">
               <div>
-                <label for="email">Your email</label>
+                <label
+                  for="email"
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Your email</label
+                >
                 <input
                   type="email"
                   name="email"
                   id="email"
                   placeholder="username@company.com"
+                  class="bg-gray-50 border border-gray-300 text-sm text-gray-900 rounded-lg w-full p-2.5 focus:outline-blue-600"
                 />
               </div>
 
               <div>
-                <label for="password">Password</label>
+                <label
+                  for="password"
+                  class="block text-sm font-medium text-gray-900 mb-2"
+                  >Password</label
+                >
                 <input
                   type="password"
                   name="password"
                   id="password"
                   placeholder="••••••••"
+                  class="bg-gray-50 w-full border border-gray-300 rounded-lg p-2.5 focus:outline-blue-600 text-gray-900"
                 />
               </div>
 
               <div>
-                <label for="confirm-password">Confirm password</label>
+                <label
+                  for="confirm-password"
+                  class="block text-sm font-medium mb-2"
+                  >Confirm password</label
+                >
                 <input
                   type="confirm-password"
                   name="confirm-password"
                   id="confirm-password"
+                  placeholder="••••••••"
+                  class="bg-gray-50 w-full border border-gray-300 p-2.5 rounded-lg focus: outline-blue-600"
                 />
               </div>
 
-              <div>
-                <div>
-                  <input type="checkbox" id="terms" />
+              <div class="flex items-start">
+                <div class="flex items-center h-5">
+                  <input
+                    type="checkbox"
+                    id="terms"
+                    aria-describedby="terms"
+                    class="w-4 h-4 border border-red-500 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 focus:ring-offset-2"
+                  />
                 </div>
-                <div>
-                  <label for="terms"
-                    >accept the <a href="#">Terms and Conditions</a></label
+                <div class="ml-4 text-sm">
+                  <label for="terms" class="text-sm font-medium text-gray-500"
+                    >I accept the <a href="#" class="text-blue-500 font-bold">Terms and Conditions</a></label
                   >
                 </div>
               </div>
-              <button type="submit">Create an account</button>
+              <button type="submit" class="bg-blue-600 text-white w-full p-2.5 rounded-lg font-bold">Create an account</button>
             </form>
-            <p>Already have an account? <a href="#">Login here</a></p>
+            <p class="text-gray-500 font-light ">Already have an account? <a href="#" class="text-blue-500 font-bold">Login here</a></p>
           </div>
         </div>
       </section>
